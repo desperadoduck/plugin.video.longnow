@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="username" type="text" label="Longnow Username"/>
+    <setting id="password" type="text" option="hidden" label="Longnow Password"/>
+</settings>
