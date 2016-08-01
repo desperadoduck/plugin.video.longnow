@@ -18,6 +18,6 @@
     <forum></forum>
     <website>http://www.galois.de/projects/kodi_longnow</website>
     <email></email>
-    <source>http://github.com/desperadoduck/kodi/plugin.video.longnow</source>
+    <source>https://github.com/desperadoduck/plugin.video.longnow</source>
   </extension>
 </addon>
