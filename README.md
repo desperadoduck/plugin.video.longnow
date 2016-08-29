@@ -6,6 +6,10 @@ You need to have an account at https://longnow.org to make use of that plugin.
 Please enter your username and password of that website in the settings dialog of
 this plugin.
 
+To use ths plugin you need to have Kodi installed. Kodi is a platform independent
+media player which runs e.g. on Windows, Android, Linux, MacOS and iOS. For more information and 
+downloads see their website at https://kodi.tv .
+
 Note: This is not an official plugin of the Long Now Foundation, but my
 private project, so please don't bother them if anything breaks.
 This might easily be the case, as there is no official interface other than the human-readable website 
