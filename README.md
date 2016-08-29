@@ -1,7 +1,7 @@
 Long Now Seminar Viewer
 =======================
 
-This program is meant to view seminars of the Long Now Foundation in Kodi. 
+This plugin is meant to view seminars of the Long Now Foundation in Kodi. 
 You need to have an account at https://longnow.org to make use of that plugin.
 Please enter your username and password of that website in the settings dialog of
 this plugin.
