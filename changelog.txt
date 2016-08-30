@@ -1,6 +1,7 @@
 v0.0.3  (2016-08-30)
 - Improve error messages
 - Add I18N support
+- add fanart image
 
 v0.0.2  (2016-07-31)
 - Initial version
