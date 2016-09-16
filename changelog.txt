@@ -1,3 +1,9 @@
+v0.0.4  (2016-09-16)
+- fix dialogs if no user or password are given
+- don't use deprecated funktion to init icon
+- change plugin id. WARNING: this means you should uninstall 
+  an older version of this plugin before updating.
+
 v0.0.3  (2016-08-30)
 - Improve error messages
 - Add I18N support
