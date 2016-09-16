@@ -16,11 +16,11 @@ msgid "Longnow Password"
 msgstr ""
 
 msgctxt "#30100"
-msgid "Invalid Username","Please enter a username in the settings of this plugin"
+msgid "Invalid Username"
 msgstr ""
 
 msgctxt "#30101"
-msgid "Invalid Password","Please enter a password in the settings of this plugin"
+msgid "Invalid Password"
 msgstr ""
 
 msgctxt "#30102"
@@ -45,4 +45,12 @@ msgstr ""
 
 msgctxt "#30300"
 msgid "Are username and password correct?"
+msgstr ""
+
+msgctxt "#30301"
+msgid "Please enter a username in the settings of this plugin"
+msgstr ""
+
+msgctxt "#30302"
+msgid "Please enter a password in the settings of this plugin"
 msgstr ""

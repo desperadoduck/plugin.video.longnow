@@ -27,9 +27,11 @@ def loadlist():
     password=my_addon.getSetting('password')
         
     if (username is None) or (username==""):
-        xbmcgui.Dialog().ok(my_addon.getLocalizedString(clo.ERR_INV_USER))
+        xbmcgui.Dialog().ok(my_addon.getLocalizedString(clo.ERR_INV_USER),
+                            my_addon.getLocalizedString(clo.HELP_INV_USER))
     if (password is None) or (password==""):
-        xbmcgui.Dialog().ok(my_addon.getLocalizedString(clo.ERR_INV_PWD))
+        xbmcgui.Dialog().ok(my_addon.getLocalizedString(clo.ERR_INV_PWD),
+                            my_addon.getLocalizedString(clo.HELP_INV_PWD))
                 
     data= {
         'username': username,
