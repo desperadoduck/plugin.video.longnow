@@ -62,7 +62,8 @@ def loadlist():
         if hdlink is not None:
             name=dl.parent.parent.find('td',{'class':'title'}).a.string
             url=hdlink['href'];
-            li = xbmcgui.ListItem(name, iconImage='DefaultVideo.png')
+            li = xbmcgui.ListItem(name)
+            li.setArt({'iconImage':'DefaultVideo.png'})
             xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     
 
