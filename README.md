@@ -18,3 +18,7 @@ at longnow.org that provides access to the seminar videos. Or at least none, tha
 Therefore this plugin uses heuristics to parse the website and find the links to the videos. 
 This mechanism might break if the structure or the layout of the website changes. 
 
+Important: if you have a version older than 0.0.4 installed, please remove it before updating. 
+Otherwise you will see the plugin twice in your list which is not as intended ;-)
+If you already see the plugin twice, please uninstall both instances, then reinstall the new version.
+
