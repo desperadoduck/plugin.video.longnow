@@ -35,6 +35,10 @@ msgctxt "#30104"
 msgid "An error connecting to the server has occured."
 msgstr ""
 
+msgctxt "#30105"
+msgid "Are username and password correct?"
+msgstr ""
+
 msgctxt "#30200"
 msgid "HTTP status code is %d."
 msgstr ""

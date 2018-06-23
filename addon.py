@@ -1,12 +1,15 @@
+from future import standard_library
+standard_library.install_aliases()
+from builtins import str
 import sys
-import urllib
-import urlparse
+import urllib.request, urllib.parse, urllib.error
+import urllib.parse
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
 import requests
-import resources.lib.const_localize as clo;
-from BeautifulSoup import BeautifulSoup
+import resources.lib.const_localize as clo
+from bs4 import BeautifulSoup
 import re
 
 def loadlist():
@@ -19,8 +22,7 @@ def loadlist():
                             my_addon.getLocalizedString(clo.INF_HTTP_STATE) % lp.status_code)
         return
         
-    loginSoup=BeautifulSoup(lp.text)
-    form= loginSoup.find("form")
+    loginSoup=BeautifulSoup(lp.text, "html.parser")
     token=loginSoup.find("input", {"name":"csrfmiddlewaretoken"})
         
     username=my_addon.getSetting('username')
@@ -50,12 +52,12 @@ def loadlist():
                             my_addon.getLocalizedString(clo.HELP_NO_LOGIN))
         return
                     
-    listSoup=BeautifulSoup(listpage.text)
+    listSoup=BeautifulSoup(listpage.text, "html.parser")
                     
     errorblock=listSoup.find("div",{'class':'error_block'})
     if errorblock is not None:
         xbmcgui.Dialog().ok(my_addon.getLocalizedString(clo.ERR_NO_ACCESS),
-                            my_addon.getLocalizedString(clo.INF_MSG_SERVER) % "".join(errorblock.findAll(text=True)))
+                            my_addon.getLocalizedString(clo.ERR_USERNAME_CORRECT))
         return
                        
     hdstring=re.compile('Full HD Video');
@@ -71,7 +73,7 @@ def loadlist():
 
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
-args = urlparse.parse_qs(sys.argv[2][1:])
+args = urllib.parse.parse_qs(sys.argv[2][1:])
 my_addon = xbmcaddon.Addon()
 
 xbmcplugin.setContent(addon_handle, 'movies')
