@@ -9,19 +9,19 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Long Now Seminar Viewer</summary>
-    <description lang="en_gb">This program is an unofficial viewer for seminars of the Long Now Foundation in Kodi. You need to have an account at https://longnow.org to make use of that plugin.</description>
-    <disclaimer lang="en_gb">This is not an official plugin of the Long Now Foundation, but my private project, so please don't bother them if anything breaks.</disclaimer>
+    <summary lang="en_GB">Long Now Seminar Viewer</summary>
+    <description lang="en_GB">This program is an unofficial viewer for seminars of the Long Now Foundation in Kodi. You need to have an account at https://longnow.org to make use of that plugin.</description>
+    <disclaimer lang="en_GB">This is not an official plugin of the Long Now Foundation, but my private project, so please don't bother them if anything breaks.</disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
-    <forum></forum>
     <website>http://www.galois.de/projects/kodi_longnow</website>
-    <email></email>
     <source>https://github.com/desperadoduck/plugin.video.longnow</source>
     <assets>
         <icon>resources/icon.png</icon>
         <fanart>resources/fanart.jpg</fanart>
     </assets>
+    <news>v0.1.2 (2020-12-28)
+- update for matrix compatibility</news>
   </extension>
 </addon>
