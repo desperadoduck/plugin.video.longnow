@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.longnow" name="Long Now Seminars" version="0.1.1" provider-name="desperadoduck">
+<addon id="plugin.video.longnow" name="Long Now Seminars" version="0.1.2" provider-name="desperadoduck">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.5.3" />
-    <import addon="script.module.requests" version="2.18.4" />
-    <import addon="script.module.future" version="0.16.0.4" />
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.8.2" />
+    <import addon="script.module.requests" version="2.22.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -15,10 +14,14 @@
     <disclaimer lang="en_gb">This is not an official plugin of the Long Now Foundation, but my private project, so please don't bother them if anything breaks.</disclaimer>
     <language>en</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <license>GPL-2.0-or-later</license>
     <forum></forum>
     <website>http://www.galois.de/projects/kodi_longnow</website>
     <email></email>
     <source>https://github.com/desperadoduck/plugin.video.longnow</source>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
